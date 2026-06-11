@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: antiquewhite;
+    color: #222;
+}
+
+/* HEADER */
+
+header{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+header p{
+    font-size: 18px;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* SEÇÕES */
+
+.sessao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 80px;
+    gap: 50px;
+    border-bottom: 1px solid black;
+}
+
+.texto{
+    width: 50%;
+    text-align: justify;
+}
+
+.texto h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* IMAGENS */
+
+.sessao img{
+    width: 400px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid gray;
+}
+
+/* LISTA */
+
+.apoio-lista{
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.apoio-lista li{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.acessibilidade{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.acessibilidade button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.acessibilidade button:hover{
+    opacity: 0.7;
+
+}
+
+.alto-contraste{
+    background-color: black;
+    color: white;
+}
+
+.alto-contraste header{
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste p,
+.alto-contraste li{
+    color: white;
+}
+
+.alto-contraste a{
+    color: yellow;
+}
+
+.alto-contraste footer{
+    background-color: black;
+    color: white;
+}
+
+.alto-contraste .acessibilidade button{
+    color: white;
+}
+
+.alto-contraste img{
+    filter: brightness(0.8);
+}
+
+fieldset{
+    border: 2px solid #d8c4a8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#estrelas,
+#obs{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#obs{
+    resize: vertical;
+}
+
+.botao{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.botao:hover{
+    opacity: 0.9;
+}
+
+
+/* RESPONSIVIDADE */
+
+
+@media (max-width: 900px) {
+
+    .sessao{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    .sessao img{
+        width: 100%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 16px;
+    }
+
+    
+
+}
+
+@media (max-width: 768px){
+
+    .acessibilidade{
+        position: static;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+}

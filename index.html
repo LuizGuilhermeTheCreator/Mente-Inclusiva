@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Inclusiva</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mente Inclusiva</h1>
+        <p>Promovendo conscientização, inclusão e bem-estar para uma sociedade mais acolhedora.</p>
+
+        <div class="menu-container">
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#saude-mental">Saúde Mental</a>
+                <a href="#desafios">Desafios</a>
+                <a href="#inclusao">Inclusão</a>
+                <a href="#apoio">Apoio</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+
+            <div class="acessibilidade">
+                <button onclick="diminuirFonte()" aria-label="Diminuir fonte">A-</button>
+                <button onclick="aumentarFonte()" aria-label="Aumentar fonte">A+</button>
+                <button onclick="alternarContraste()" aria-label="Alto contraste">◐</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section class="sessao" id="inicio">
+
+            <div class="texto">
+                <h2>O que é Saúde Mental?</h2>
+
+                <p>
+                    A saúde mental está relacionada à forma como uma pessoa pensa,
+                    sente e enfrenta os desafios da vida. Ela influencia nossos relacionamentos,
+                    nossa autoestima e nossa capacidade de participar ativamente da sociedade.
+                </p>
+
+                <p>
+                    Assim como a saúde física, a saúde mental precisa de atenção e cuidado.
+                    Quando negligenciada, pode afetar o bem-estar emocional e a qualidade de vida.
+                </p>
+            </div>
+
+            <img src="saudeMental.png" alt="Representação de saúde mental">
+        </section>
+
+        <!-- SAÚDE MENTAL E DEFICIÊNCIA -->
+        <section class="sessao" id="saude-mental">
+
+            <div class="texto">
+                <h2>Saúde Mental e Pessoas com Deficiência</h2>
+
+                <p>
+                    Pessoas com deficiência enfrentam desafios que vão além das limitações físicas,
+                    sensoriais ou intelectuais, muitas vezes causados por barreiras sociais e preconceitos.
+                </p>
+
+                <p>
+                    Essas dificuldades podem impactar diretamente o bem-estar emocional,
+                    tornando essencial a promoção da inclusão e do respeito.
+                </p>
+            </div>
+
+            <img src="saudePessoas.png" alt="Inclusão social">
+        </section>
+
+        <!-- DESAFIOS -->
+        <section class="sessao" id="desafios">
+
+            <div class="texto">
+                <h2>Desafios Enfrentados</h2>
+
+                <p>
+                    Muitas pessoas com deficiência ainda convivem com exclusão social,
+                    discriminação e falta de oportunidades em diferentes áreas da vida.
+                </p>
+
+                <p>
+                    Essas barreiras afetam a autoestima e o sentimento de pertencimento,
+                    impactando diretamente a saúde mental.
+                </p>
+            </div>
+
+            <img src="saudeProblemas.png" alt="Problemas Encontrados">
+        </section>
+
+        <!-- INCLUSÃO -->
+        <section class="sessao" id="inclusao">
+
+            <div class="texto">
+                <h2>Inclusão Social</h2>
+
+                <p>
+                    A inclusão social garante que todas as pessoas tenham acesso às mesmas oportunidades,
+                    respeitando suas diferenças e valorizando suas capacidades.
+                </p>
+
+                <p>
+                    Uma sociedade inclusiva promove participação, autonomia e dignidade,
+                    reconhecendo a diversidade como parte fundamental da convivência humana.
+                </p>
+            </div>
+
+            <img src="saudeAcolhimento.png" alt="Pessoas em ambiente inclusivo">
+        </section>
+
+        <!-- APOIO -->
+        <section class="sessao" id="apoio">
+
+            <div class="texto">
+                <h2>Canais de Apoio</h2>
+
+                <p>
+                    O cuidado com a saúde mental pode envolver apoio profissional,
+                    familiar e comunitário, sendo essencial em momentos de dificuldade emocional.
+                </p>
+
+                <p>
+                    Buscar ajuda é um ato de cuidado e não de fraqueza.
+                    Redes de apoio podem fazer grande diferença na vida das pessoas.
+                </p>
+
+                <h2>Onde Buscar Apoio?</h2>
+
+                <ul class="apoio-lista">
+                    <li>Psicólogos e profissionais da saúde mental</li>
+                    <li>Unidades Básicas de Saúde (UBS)</li>
+                    <li>Centros de Atenção Psicossocial (CAPS)</li>
+                    <li>Familiares e amigos de confiança</li>
+                    <li>Instituições de apoio à pessoa com deficiência</li>
+                </ul>
+            </div>
+
+            <img src="saudeApoio.png" alt="Rede de apoio emocional">
+        </section>
+
+        <!-- SOBRE -->
+        <section class="sessao" id="sobre">
+
+            <div class="texto">
+                <h2>Sobre o Projeto</h2>
+
+                <p>
+                    O Mente Inclusiva é um projeto desenvolvido por estudantes da UniLaSalle-RJ
+                    com o objetivo de promover informação e reflexão sobre a saúde mental de pessoas com deficiência.
+                </p>
+
+                <p>
+                    Buscamos incentivar o respeito às diferenças, combater preconceitos e contribuir
+                    para uma sociedade mais inclusiva e acolhedora.
+                </p>
+
+
+                <h2>Avaliação e Feedback</h2>
+
+                <p>
+                    Sua opinião nos ajuda a melhorar o projeto e ampliar a conscientização sobre saúde mental e inclusão.
+                </p>
+
+                <form name="feedback" method="post" netlify>
+
+                    <fieldset>
+
+                        <legend>Compartilhe sua Opinião</legend>
+
+                        <label for="estrelas">
+                            Avalie nosso site:
+                        </label>
+
+                        <br><br>
+
+                        <select name="avaliacao" id="estrelas" required>
+                            <option value="">Selecione uma avaliação</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                            <option value="4">⭐⭐⭐⭐ Muito bom</option>
+                            <option value="3">⭐⭐⭐ Bom</option>
+                            <option value="2">⭐⭐ Regular</option>
+                            <option value="1">⭐ Precisa melhorar</option>
+                        </select>
+
+                        <br><br>
+
+                        <label for="obs">
+                            Observações:
+                        </label>
+
+                        <br><br>
+
+                        <textarea
+                            name="observacoes"
+                            id="obs"
+                            rows="5"
+                            placeholder="Conte-nos sua opinião, sugestão ou experiência..."
+                            required
+                        ></textarea>
+
+                        <br><br>
+
+                        <input type="submit" value="Enviar" class="botao">
+                        <input type="reset" value="Limpar" class="botao">
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+            <img src="sobre.png" alt="Projeto acadêmico">
+        </section>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Mente Inclusiva | Desenvolvido por estudantes da UniLaSalle-RJ</p>
+    </footer>
+
+</body>
+<script src="funcoes.js"></script>
+</html>
